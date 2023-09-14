@@ -1,0 +1,35 @@
+# примеры API-запросов
+
+
+# создание объявления
+POST http://0.0.0.0:8080/advertisements/
+Content-Type: application/json
+
+{
+  "title": "Продам дом",
+  "description": "Большой, красивый",
+  "user_id": 1
+}
+
+###
+
+# получение объявлений
+GET http://0.0.0.0:8080/advertisements/
+Content-Type: application/json
+
+###
+
+# обновление объявления
+PATCH http://0.0.0.0:8080/advertisements/1
+Content-Type: application/json
+
+{
+  "title": "Продам гараж",
+  "description": "Большой, красивый"
+}
+
+###
+
+# удаление объявления
+DELETE http://0.0.0.0:8080/advertisements/1
+Content-Type: application/json
